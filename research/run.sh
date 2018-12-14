@@ -9,12 +9,11 @@ echo current dir is $PWD
 export PYTHONPATH=$PYTHONPATH:$DIR:$DIR/slim:$DIR/object_detection
 
 # 定义各目录
-output_dir=/root/models-r1.5/research/models/ssd_mobilenet_v1/  # 训练目录
-dataset_dir=/root/models-r1.5/research/data/quiz-w8-data/ # 数据集目录，这里是写死的，记得修改
+output_dir=/output  # 训练目录
+dataset_dir=/data/helloworld/quizw9 # 数据集目录，这里是写死的，记得修改
 
 train_dir=$output_dir/train
-#checkpoint_dir=$train_dir
-checkpoint_dir=/root/models-r1.5/research/data/quiz-w8-data/pre_train/ssd_mobilenet_v1_coco_2018_01_28/
+checkpoint_dir=$train_dir
 eval_dir=$output_dir/eval
 
 # config文件
